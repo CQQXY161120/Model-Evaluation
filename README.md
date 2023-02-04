@@ -34,7 +34,7 @@ We implement our methods by Python 3.8. The environment is as bellow:
 
 ## Technical Details and Citations:  
 You can find more details in the paper:  
-[Instance Selection: A Bayesian Decision Theory Perspective](http://jiyeliang.net/Cms_Data/Contents/SXU_JYL/Folders/JournalPapers/~contents/20223301.pdf)
+[Evaluating Classification Model Against Bayes Error Rate](https://ieeexplore.ieee.org/document/10027467)
 
 If you're using this repo in your research or applications, please cite this BibTeX:
 
