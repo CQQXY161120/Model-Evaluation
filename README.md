@@ -1,5 +1,5 @@
 # Model-Evaluation
-TPAMI'23:Evaluating Classification Model Against Bayes Error Rate
+TPAMI'23: Evaluating Classification Model Against Bayes Error Rate
 
 ## Introduction:
 
