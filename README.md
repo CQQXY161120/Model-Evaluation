@@ -25,7 +25,7 @@ If you're using this repo in your research or applications, please cite this Bib
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
   title={Evaluating Classification Model Against Bayes Error Rate}, 
   year={2023},
-  volume={},
-  number={},
-  pages={1-16},
+  volume={45},
+  number={8},
+  pages={9639-9653},
   doi={10.1109/TPAMI.2023.3240194}}
