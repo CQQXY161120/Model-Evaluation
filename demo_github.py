@@ -53,12 +53,15 @@ def BN_BER (Data, Label):
         if len(result_s[i]) > 3:
             conf.extend(result_s[i])
     unconf = list(set(list(range(n)))-set(conf))
-    label_prop_model = LabelSpreading()
-    label_c = np.copy(Label)
-    label_c[unconf] = -1
-    label_prop_model.fit(Data, label_c)
-    label_p = label_prop_model.predict(Data[unconf,:])
-    ber = len(np.where(Label[unconf]-label_p!=0)[0])/n
+    if len(unconf)!=0: 
+        label_prop_model = LabelSpreading()
+        label_c = np.copy(Label)
+        label_c[unconf] = -1
+        label_prop_model.fit(Data, label_c)
+        label_p = label_prop_model.predict(Data[unconf,:])
+        ber = len(np.where(Label[unconf]-label_p!=0)[0])/n
+    else:
+        ber=0
     
     return ber
 
