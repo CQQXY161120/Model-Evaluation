@@ -57,8 +57,8 @@ def BN_BER (Data, Label):
     label_c = np.copy(Label)
     label_c[unconf] = -1
     label_prop_model.fit(Data, label_c)
-    label_p = label_prop_model.predict(Data)
-    ber = len(np.where(Label-label_p!=0)[0])/n
+    label_p = label_prop_model.predict(Data[unconf,:])
+    ber = len(np.where(Label[unconf]-label_p!=0)[0])/n
     
     return ber
 
